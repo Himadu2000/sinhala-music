@@ -11,6 +11,7 @@ module.exports = {
     title: `Sinhala Music`,
     description: `Classical Sinhala Music.`,
     author: `@himadu`,
+    siteUrl: "http://himadu.me/sinhala-music",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
