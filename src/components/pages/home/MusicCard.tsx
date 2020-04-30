@@ -1,30 +1,46 @@
-import React, { useState } from "react"
-import { Link } from "gatsby"
+import React from "react"
+import {
+  MDBBtn,
+  MDBCard,
+  MDBCardBody,
+  MDBCardImage,
+  MDBCardText,
+  MDBIcon,
+} from "mdbreact"
 
-import ReactHowler from "react-howler"
+import Howler from "./Howler"
 
-import Example from "./Exmaple"
-
-const IndexPage = data => {
-  const [isPlaying, setIsPlaying] = useState(false)
-  const play = () => setIsPlaying(!isPlaying)
-  const Items = data.data
+const CardExample = () => {
   return (
-    <ul>
-      <Example />
-      {Items.map(item => (
-        <li>
-          <ReactHowler
-            src={item.audioFile.url}
-            playing={isPlaying}
-            preload={false}
-            loop={true}
-          />
-          <button onClick={play}>Toggle Play</button>
-        </li>
-      ))}
-    </ul>
+    <MDBCard narrow>
+      <MDBCardImage
+        className="view view-cascade gradient-card-header purple-gradient"
+        cascade
+        tag="div"
+      >
+        <h2 className="h2-responsive">Mattonit</h2>
+        <p>The Boar</p>
+        <div className="text-center">
+          <MDBBtn color="purple" floating size="sm">
+            <MDBIcon icon="arrow-down" />
+          </MDBBtn>
+          <MDBBtn color="purple" floating size="sm">
+            <MDBIcon icon="play" />
+          </MDBBtn>
+          <MDBBtn color="purple" floating size="sm">
+            <MDBIcon icon="stop" />
+            <MDBIcon icon="plus" />
+          </MDBBtn>
+        </div>
+        <MDBBtn color="purple" floating size="sm">
+          <MDBIcon icon="plus" />
+        </MDBBtn>
+      </MDBCardImage>
+      <MDBCardBody cascade className="text-center">
+        <MDBCardText>Lorem ipsum dolor sit. .</MDBCardText>
+      </MDBCardBody>
+    </MDBCard>
   )
 }
 
-export default IndexPage
+export default CardExample

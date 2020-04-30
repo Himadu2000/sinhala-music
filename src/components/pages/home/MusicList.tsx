@@ -8,25 +8,12 @@ const MusicList = data => {
   const Items = data.data
   return (
     <div className="grid">
-      <MusicCard data={Items} />
-      <MusicCard data={Items} />
-      <MusicCard data={Items} />
-      <MusicCard data={Items} />
-      <MusicCard data={Items} />
-      <MusicCard data={Items} />
-      <MusicCard data={Items} />
-      <MusicCard data={Items} />
-      <MusicCard data={Items} />
-      <MusicCard data={Items} />
-      <MusicCard data={Items} />
-      <MusicCard data={Items} />
-      <MusicCard data={Items} />
-      <MusicCard data={Items} />
-      <MusicCard data={Items} />
-      <MusicCard data={Items} />
-      <MusicCard data={Items} />
-      <MusicCard data={Items} />
-      <MusicCard data={Items} />
+      {" "}
+      <ul>
+        {Items.map(item => (
+          <MusicCard data={item} />
+        ))}
+      </ul>
     </div>
   )
 }
