@@ -1,4 +1,6 @@
-import React from "react"
+import React, { useState } from "react"
+
+import ReactHowler from "react-howler"
 import {
   MDBBtn,
   MDBCard,
@@ -8,9 +10,10 @@ import {
   MDBIcon,
 } from "mdbreact"
 
-import Howler from "./Howler"
-
-const CardExample = () => {
+const Player = data => {
+  const [isPlaying, setIsPlaying] = useState(false)
+  const play = () => setIsPlaying(!isPlaying)
+  const item = data.data
   return (
     <MDBCard narrow>
       <MDBCardImage
@@ -37,10 +40,22 @@ const CardExample = () => {
         </MDBBtn>
       </MDBCardImage>
       <MDBCardBody cascade className="text-center">
-        <MDBCardText>Lorem ipsum dolor sit. .</MDBCardText>
+        <MDBCardText>
+          Lorem ipsum dolor sit. .
+          <li>
+            <ReactHowler
+              src={item.audioFile.url}
+              playing={isPlaying}
+              preload={false}
+              loop={false}
+              onLoadError={error => console.log(error)}
+            />
+            <button onClick={play}>Toggle Play</button>
+          </li>
+        </MDBCardText>
       </MDBCardBody>
     </MDBCard>
   )
 }
 
-export default CardExample
+export default Player
