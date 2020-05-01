@@ -102,6 +102,7 @@ module.exports = {
         populate: true,
         navigation: true,
         globals: true,
+        content: [{ schemaKey: "music", populate: true }],
       },
     },
   ],

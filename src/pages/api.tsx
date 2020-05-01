@@ -24,20 +24,20 @@ const Player = () => (
               <MDBCardTitle className="h1-responsive pt-3 m-5 font-bold">
                 Our API for development
               </MDBCardTitle>
-              <p className="mx-5 mb-5">
-                You can connect to our flamelink data API through these
-                credentials!
-              </p>
-              <p> apiKey: "AIzaSyDWHcUtFU9jVz9QqQOXbvi7BtKCDmEKd7U",</p>
-              <p> authDomain: "sinhala-music.firebaseapp.com",</p>
-              <p> databaseURL: "https://sinhala-music.firebaseio.com",</p>
-              <p> projectId: "sinhala-music",</p>
-              <p> storageBucket: "sinhala-music.appspot.com",</p>
-              <p>
-                messagingSenderId: "545439947091",
-                <p> appId: "1:545439947091:web:bddced9405a7171ada29a6",</p>
-                <p> measurementId: "G-QW4SB7KWCK",</p>
-              </p>
+              <div className="mx-5 mb-5">
+                <p>
+                  You can connect to our flamelink data API through these
+                  credentials!
+                </p>
+                <> apiKey: "AIzaSyDWHcUtFU9jVz9QqQOXbvi7BtKCDmEKd7U",</>
+                <> authDomain: "sinhala-music.firebaseapp.com",</>
+                <> databaseURL: "https://sinhala-music.firebaseio.com",</>
+                <> projectId: "sinhala-music",</>
+                <> storageBucket: "sinhala-music.appspot.com",</>
+                <>messagingSenderId: "545439947091",</>
+                <> appId: "1:545439947091:web:bddced9405a7171ada29a6",</>
+                <> measurementId: "G-QW4SB7KWCK",</>
+              </div>
             </MDBCol>
           </MDBCol>
         </MDBJumbotron>
