@@ -12,9 +12,21 @@ import {
 
 const Player = data => {
   const [isPlaying, setIsPlaying] = useState(false)
+  const [icon, setIcon] = useState("play")
   const play = () => setIsPlaying(!isPlaying)
   const item = data.data
   const source = item.audioFile.map(itemMap => itemMap.url)
+
+  function PlayPause() {
+    play()
+    if (isPlaying) setIcon("stop")
+    else setIcon("play")
+  }
+
+  function AddToPlayList() {
+    console.log("Added")
+  }
+
   return (
     <MDBCard narrow>
       <MDBCardImage
@@ -25,22 +37,20 @@ const Player = data => {
         <h2 className="h2-responsive">{item.title}</h2>
         <p>{item.singer}</p>
         <div className="text-center">
-          <MDBBtn color="purple" floating size="sm">
-            <MDBIcon icon="arrow-down" />
+          <MDBBtn color="purple" floating size="sm" onClick={PlayPause}>
+            <MDBIcon icon={icon} />
           </MDBBtn>
-          <MDBBtn color="purple" floating size="sm" onClick={play}>
-            <MDBIcon icon="play" />
-          </MDBBtn>
-          <MDBBtn color="purple" floating size="sm">
-            <MDBIcon icon="stop" />
-          </MDBBtn>
-          <MDBBtn color="purple" floating size="sm">
+          <MDBBtn color="purple" floating size="sm" onClick={AddToPlayList}>
             <MDBIcon icon="plus" />
+          </MDBBtn>
+          <MDBBtn color="purple" floating size="sm" download={source}>
+            <MDBIcon icon="arrow-down" />
           </MDBBtn>
         </div>
       </MDBCardImage>
       <MDBCardBody cascade className="text-center">
         <MDBCardText>
+          {item.description}
           <ReactHowler
             src={source}
             playing={isPlaying}
