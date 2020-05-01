@@ -1,61 +1,127 @@
-import React, { useState } from "react"
-
-import ReactHowler from "react-howler"
+import React from "react"
 import {
-  MDBBtn,
+  MDBRow,
+  MDBCol,
   MDBCard,
   MDBCardBody,
-  MDBCardImage,
-  MDBCardText,
   MDBIcon,
+  MDBBtn,
+  MDBInput,
 } from "mdbreact"
 
-const Player = data => {
-  const [isPlaying, setIsPlaying] = useState(false)
-  const play = () => setIsPlaying(!isPlaying)
-  const item = data.data
+const ContactPage = () => {
   return (
-    <MDBCard narrow>
-      <MDBCardImage
-        className="view view-cascade gradient-card-header purple-gradient"
-        cascade
-        tag="div"
-      >
-        <h2 className="h2-responsive">Mattonit</h2>
-        <p>The Boar</p>
-        <div className="text-center">
-          <MDBBtn color="purple" floating size="sm">
-            <MDBIcon icon="arrow-down" />
-          </MDBBtn>
-          <MDBBtn color="purple" floating size="sm">
-            <MDBIcon icon="play" />
-          </MDBBtn>
-          <MDBBtn color="purple" floating size="sm">
-            <MDBIcon icon="stop" />
-            <MDBIcon icon="plus" />
-          </MDBBtn>
-        </div>
-        <MDBBtn color="purple" floating size="sm">
-          <MDBIcon icon="plus" />
-        </MDBBtn>
-      </MDBCardImage>
-      <MDBCardBody cascade className="text-center">
-        <MDBCardText>
-          Lorem ipsum dolor sit. .
-          <li>
-            <ReactHowler
-              src={item.audioFile.url}
-              playing={isPlaying}
-              preload={false}
-              loop={false}
-              onLoadError={error => console.log(error)}
-            />
-            <button onClick={play}>Toggle Play</button>
-          </li>
-        </MDBCardText>
-      </MDBCardBody>
-    </MDBCard>
+    <section className="contact-section my-5">
+      <MDBCard>
+        <MDBRow>
+          <MDBCol lg="8">
+            <MDBCardBody className="form">
+              <h3 className="mt-4">
+                <MDBIcon icon="envelope" className="pr-2" />
+                Write to us:
+              </h3>
+              <MDBRow>
+                <MDBCol md="6">
+                  <div className="md-form mb-0">
+                    <MDBInput
+                      type="text"
+                      id="form-contact-name"
+                      label="Your name"
+                    />
+                  </div>
+                </MDBCol>
+                <MDBCol md="6">
+                  <div className="md-form mb-0">
+                    <MDBInput
+                      type="text"
+                      id="form-contact-email"
+                      label="Your email"
+                    />
+                  </div>
+                </MDBCol>
+              </MDBRow>
+              <MDBRow>
+                <MDBCol md="6">
+                  <div className="md-form mb-0">
+                    <MDBInput
+                      type="text"
+                      id="form-contact-phone"
+                      label="Your phone"
+                    />
+                  </div>
+                </MDBCol>
+                <MDBCol md="6">
+                  <div className="md-form mb-0">
+                    <MDBInput
+                      type="text"
+                      id="form-contact-company"
+                      label="Your company"
+                    />
+                  </div>
+                </MDBCol>
+              </MDBRow>
+              <MDBRow>
+                <MDBCol md="12">
+                  <div className="md-form mb-0">
+                    <MDBInput
+                      type="textarea"
+                      id="form-contact-message"
+                      label="Your message"
+                    />
+                    <MDBBtn rounded color="blue">
+                      <MDBIcon icon="paper-plane" />
+                    </MDBBtn>
+                  </div>
+                </MDBCol>
+              </MDBRow>
+            </MDBCardBody>
+          </MDBCol>
+          <MDBCol lg="4">
+            <MDBCardBody className="contact text-center h-100 white-text">
+              <h3 className="my-4 pb-2">Contact information</h3>
+              <ul className="text-lg-left list-unstyled ml-4">
+                <li>
+                  <p>
+                    <MDBIcon icon="map-marker-alt" className="pr-2" />
+                    New York, 94126 USA
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <MDBIcon icon="phone" className="pr-2" />+ 01 234 567 89
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <MDBIcon icon="envelope" className="pr-2" />
+                    contact@example.com
+                  </p>
+                </li>
+              </ul>
+              <hr className="hr-light my-4" />
+              <ul className="list-inline text-center list-unstyled">
+                <li className="list-inline-item">
+                  <a href="#!" className="p-2 fa-lg w-ic">
+                    <MDBIcon fab icon="twitter" />
+                  </a>
+                </li>
+                <li className="list-inline-item">
+                  <a href="#!" className="p-2 fa-lg w-ic">
+                    <MDBIcon fab icon="linkedin-in" />
+                  </a>
+                </li>
+                <li className="list-inline-item">
+                  <a href="#!" className="p-2 fa-lg w-ic">
+                    <MDBIcon fab icon="instagram" />
+                  </a>
+                </li>
+              </ul>
+            </MDBCardBody>
+          </MDBCol>
+        </MDBRow>
+      </MDBCard>
+    </section>
   )
 }
 
-export default Player
+export default ContactPage
