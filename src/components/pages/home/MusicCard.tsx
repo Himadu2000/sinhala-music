@@ -1,14 +1,7 @@
 import React, { useState } from "react"
 
 import ReactHowler from "react-howler"
-import {
-  MDBBtn,
-  MDBCard,
-  MDBCardBody,
-  MDBCardImage,
-  MDBCardText,
-  MDBIcon,
-} from "mdbreact"
+import { MDBBtn, MDBCard, MDBCardImage, MDBIcon } from "mdbreact"
 
 const Player = data => {
   const [isPlaying, setIsPlaying] = useState(false)
@@ -19,6 +12,17 @@ const Player = data => {
     setIsPlaying(!isPlaying)
   }
   function AddToPlayList() {
+    if (typeof window !== "undefined") {
+      let previousPlayList = localStorage.getItem("playList")
+
+      if (previousPlayList != null) {
+        localStorage.setItem("playList", `"${source}","${previousPlayList}"`)
+      } else {
+        localStorage.setItem("playList", `"${source}"`)
+      }
+    } else {
+      console.log("This is SSR")
+    }
     console.log("Added")
   }
 
@@ -38,26 +42,26 @@ const Player = data => {
           <MDBBtn color="purple" floating size="sm" onClick={AddToPlayList}>
             <MDBIcon icon="plus" />
           </MDBBtn>
-          <MDBBtn color="purple" floating size="sm" download={source}>
-            <MDBIcon icon="arrow-down" />
-          </MDBBtn>
+          <a href={source} download>
+            <MDBBtn color="purple" floating size="sm" download={source}>
+              <MDBIcon icon="arrow-down" />
+            </MDBBtn>
+          </a>
         </div>
       </MDBCardImage>
-      <MDBCardBody cascade className="text-center">
-        <MDBCardText>
-          {/*{item.description}*/}
-          <ReactHowler
-            src={source}
-            playing={isPlaying}
-            preload={false}
-            html5={true}
-            onPlay={() => setIcon("stop")}
-            onPause={() => setIcon("play")}
-            onStop={() => setIcon("play")}
-            onLoadError={error => console.error(error)}
-          />
-        </MDBCardText>
-      </MDBCardBody>
+      <ReactHowler
+        src={source}
+        playing={isPlaying}
+        preload={false}
+        html5={true}
+        onPlay={() => setIcon("stop")}
+        onPause={() => setIcon("play")}
+        onStop={() => setIcon("play")}
+        onLoadError={error => console.error(error)}
+      />
+      {/*<MDBCardBody cascade className="text-center">
+        <MDBCardText>{item.description}</MDBCardText>
+      </MDBCardBody>*/}
     </MDBCard>
   )
 }
