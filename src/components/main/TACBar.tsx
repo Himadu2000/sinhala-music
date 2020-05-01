@@ -1,22 +1,16 @@
 import React from "react"
-import { MDBContainer, MDBAlert } from "mdbreact"
+import { MDBAlert } from "mdbreact"
 
 const AlertPage = () => {
   return (
-    <MDBContainer>
-      <MDBAlert color="warning">
-        This website could also include unlicensed copyright items, and we are
-        not legally responsible for this website.{" "}
-        <a href="https://himadu.me/sinhala-music/tos" className="alert-link">
-          TOS
-        </a>{" "}
-        And if you don't agree with this or TOS please leave this site
-        immediatly.
-      </MDBAlert>{" "}
-      <MDBAlert color="info">
-        You will need to triple click to play, Due to security issues.
-      </MDBAlert>
-    </MDBContainer>
+    <MDBAlert color="warning">
+      This website could also include unlicensed copyright items, and we are not
+      legally responsible for this website.{" "}
+      <a href="https://himadu.me/sinhala-music/tos" className="alert-link">
+        TOS
+      </a>{" "}
+      And if you don't agree with this or TOS please leave this site immediatly.
+    </MDBAlert>
   )
 }
 

@@ -8,6 +8,13 @@ ul {
   padding: 0;
 }
 
+.name {
+  margin: auto;
+  width: 50%;
+  color: aliceblue;
+  font-size: larger;
+}
+
 @media (min-width: 300px) {
   .grid {
     grid-template-columns: auto auto;

@@ -28,7 +28,7 @@ const Footer = () => {
       </div>
       <MDBContainer className="mt-5 mb-4 text-center text-md-left">
         <MDBRow className="mt-3">
-          <MDBCol md="3" lg="4" xl="3" className="mb-4 white-text">
+          <MDBCol md="4" lg="4" xl="4" className="mb-4 white-text">
             <h6 className="text-uppercase font-weight-bold">
               <strong>Sinhala Music</strong>
             </h6>
@@ -43,7 +43,7 @@ const Footer = () => {
               problems please leave this site.
             </p>
           </MDBCol>
-          <MDBCol md="3" lg="2" xl="2" className="mb-4 white-text">
+          <MDBCol md="2" lg="2" xl="2" className="mb-4 white-text">
             <h6 className="text-uppercase font-weight-bold">
               <strong>Useful links</strong>
             </h6>
@@ -54,11 +54,16 @@ const Footer = () => {
             <Link to="/contact" className="white-text">
               Contact Us
             </Link>
+            <br />
             <Link to="/api" className="white-text">
               API
             </Link>
+            <br />
+            <Link to="/login" className="white-text">
+              Login
+            </Link>
           </MDBCol>
-          <MDBCol md="4" lg="3" xl="3" className="mb-4 white-text">
+          <MDBCol md="4" lg="4" xl="4" className="mb-4 white-text">
             <h6 className="text-uppercase font-weight-bold">
               <strong>Contact</strong>
             </h6>

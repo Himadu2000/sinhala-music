@@ -49,10 +49,10 @@ const Player = data => {
           <ReactHowler
             src={source}
             playing={isPlaying}
-            preload={isPlaying}
+            preload={false}
+            html5={true}
             onPlay={() => setIcon("stop")}
             onPause={() => setIcon("play")}
-            loop={false}
             onLoadError={error => console.error(error)}
           />
         </MDBCardText>
