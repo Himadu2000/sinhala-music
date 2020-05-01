@@ -12,7 +12,8 @@ const AlertPage = () => {
         </a>{" "}
         And if you don't agree with this or TOS please leave this site
         immediatly.
-      </MDBAlert>
+      </MDBAlert>{" "}
+      <MDBAlert color="info">You will need to double click to play.</MDBAlert>
     </MDBContainer>
   )
 }
