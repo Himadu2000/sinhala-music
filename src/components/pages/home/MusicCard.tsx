@@ -14,6 +14,7 @@ const Player = data => {
   const [isPlaying, setIsPlaying] = useState(false)
   const play = () => setIsPlaying(!isPlaying)
   const item = data.data
+  const source = item.audioFile.map(itemMap => itemMap.url)
   return (
     <MDBCard narrow>
       <MDBCardImage
@@ -21,37 +22,32 @@ const Player = data => {
         cascade
         tag="div"
       >
-        <h2 className="h2-responsive">Mattonit</h2>
-        <p>The Boar</p>
+        <h2 className="h2-responsive">{item.title}</h2>
+        <p>{item.singer}</p>
         <div className="text-center">
           <MDBBtn color="purple" floating size="sm">
             <MDBIcon icon="arrow-down" />
           </MDBBtn>
-          <MDBBtn color="purple" floating size="sm">
+          <MDBBtn color="purple" floating size="sm" onClick={play}>
             <MDBIcon icon="play" />
           </MDBBtn>
           <MDBBtn color="purple" floating size="sm">
             <MDBIcon icon="stop" />
+          </MDBBtn>
+          <MDBBtn color="purple" floating size="sm">
             <MDBIcon icon="plus" />
           </MDBBtn>
         </div>
-        <MDBBtn color="purple" floating size="sm">
-          <MDBIcon icon="plus" />
-        </MDBBtn>
       </MDBCardImage>
       <MDBCardBody cascade className="text-center">
         <MDBCardText>
-          Lorem ipsum dolor sit. .
-          <li>
-            <ReactHowler
-              src={item.audioFile.url}
-              playing={isPlaying}
-              preload={false}
-              loop={false}
-              onLoadError={error => console.log(error)}
-            />
-            <button onClick={play}>Toggle Play</button>
-          </li>
+          <ReactHowler
+            src={source}
+            playing={isPlaying}
+            preload={isPlaying}
+            loop={false}
+            onLoadError={error => console.error(error)}
+          />
         </MDBCardText>
       </MDBCardBody>
     </MDBCard>
