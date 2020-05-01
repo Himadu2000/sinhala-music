@@ -1,61 +1,49 @@
-import React, { useState } from "react"
-
-import ReactHowler from "react-howler"
+import React from "react"
 import {
+  MDBJumbotron,
   MDBBtn,
-  MDBCard,
-  MDBCardBody,
-  MDBCardImage,
-  MDBCardText,
+  MDBContainer,
+  MDBRow,
+  MDBCol,
+  MDBCardTitle,
   MDBIcon,
 } from "mdbreact"
 
-const Player = data => {
-  const [isPlaying, setIsPlaying] = useState(false)
-  const play = () => setIsPlaying(!isPlaying)
-  const item = data.data
-  return (
-    <MDBCard narrow>
-      <MDBCardImage
-        className="view view-cascade gradient-card-header purple-gradient"
-        cascade
-        tag="div"
-      >
-        <h2 className="h2-responsive">Mattonit</h2>
-        <p>The Boar</p>
-        <div className="text-center">
-          <MDBBtn color="purple" floating size="sm">
-            <MDBIcon icon="arrow-down" />
-          </MDBBtn>
-          <MDBBtn color="purple" floating size="sm">
-            <MDBIcon icon="play" />
-          </MDBBtn>
-          <MDBBtn color="purple" floating size="sm">
-            <MDBIcon icon="stop" />
-            <MDBIcon icon="plus" />
-          </MDBBtn>
-        </div>
-        <MDBBtn color="purple" floating size="sm">
-          <MDBIcon icon="plus" />
-        </MDBBtn>
-      </MDBCardImage>
-      <MDBCardBody cascade className="text-center">
-        <MDBCardText>
-          Lorem ipsum dolor sit. .
-          <li>
-            <ReactHowler
-              src={item.audioFile.url}
-              playing={isPlaying}
-              preload={false}
-              loop={false}
-              onLoadError={error => console.log(error)}
-            />
-            <button onClick={play}>Toggle Play</button>
-          </li>
-        </MDBCardText>
-      </MDBCardBody>
-    </MDBCard>
-  )
-}
+const Player = () => (
+  <MDBContainer>
+    <MDBRow>
+      <MDBCol>
+        <MDBJumbotron style={{ padding: 0 }}>
+          <MDBCol
+            className="text-white text-center py-5 px-4 my-5"
+            style={{
+              backgroundImage: `url(https://mdbootstrap.com/img/Photos/Others/gradient1.jpg)`,
+            }}
+          >
+            <MDBCol className="py-5">
+              <MDBCardTitle className="h1-responsive pt-3 m-5 font-bold">
+                Our API for development
+              </MDBCardTitle>
+              <p className="mx-5 mb-5">
+                You can connect to our flamelink data API through these
+                credentials!
+              </p>
+              <p> apiKey: "AIzaSyDWHcUtFU9jVz9QqQOXbvi7BtKCDmEKd7U",</p>
+              <p> authDomain: "sinhala-music.firebaseapp.com",</p>
+              <p> databaseURL: "https://sinhala-music.firebaseio.com",</p>
+              <p> projectId: "sinhala-music",</p>
+              <p> storageBucket: "sinhala-music.appspot.com",</p>
+              <p>
+                messagingSenderId: "545439947091",
+                <p> appId: "1:545439947091:web:bddced9405a7171ada29a6",</p>
+                <p> measurementId: "G-QW4SB7KWCK",</p>
+              </p>
+            </MDBCol>
+          </MDBCol>
+        </MDBJumbotron>
+      </MDBCol>
+    </MDBRow>
+  </MDBContainer>
+)
 
 export default Player

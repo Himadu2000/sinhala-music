@@ -20,21 +20,7 @@ const Footer = () => {
               </h6>
             </MDBCol>
             <MDBCol md="6" lg="7" className="text-center text-md-right">
-              <a className="fb-ic ml-0" href="https://himadu.me/sinhala-music">
-                <i className="fab fa-facebook-f white-text mr-lg-4"> </i>
-              </a>
-              <a className="tw-ic" href="https://himadu.me/sinhala-music">
-                <i className="fab fa-twitter white-text mr-lg-4"> </i>
-              </a>
-              <a className="gplus-ic" href="https://himadu.me/sinhala-music">
-                <i className="fab fa-google-plus-g white-text mr-lg-4"> </i>
-              </a>
-              <a className="li-ic" href="https://himadu.me/sinhala-music">
-                <i className="fab fa-linkedin-in white-text mr-lg-4"> </i>
-              </a>
-              <a className="ins-ic" href="https://himadu.me/sinhala-music">
-                <i className="fab fa-instagram white-text mr-lg-4"> </i>
-              </a>
+              <p>Sorry no Social Media Available</p>
             </MDBCol>
           </MDBRow>
         </MDBContainer>
@@ -58,20 +44,6 @@ const Footer = () => {
               musician to our generation.
             </p>
           </MDBCol>
-          <MDBCol md="2" lg="2" xl="2" className="mb-4 white-text">
-            <h6 className="text-uppercase font-weight-bold">
-              <strong>Useful Links</strong>
-            </h6>
-            <hr
-              className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"
-              style={{ width: "60px" }}
-            />
-            <p>
-              <a href="https://himadu.me/sinhala-music" className="white-text">
-                Papers
-              </a>
-            </p>
-          </MDBCol>
           <MDBCol md="3" lg="2" xl="2" className="mb-4 white-text">
             <h6 className="text-uppercase font-weight-bold">
               <strong>Useful links</strong>
@@ -81,8 +53,19 @@ const Footer = () => {
               style={{ width: "60px" }}
             />
             <p>
-              <a href="https://himadu.me/sinhala-music" className="white-text">
-                Gallery
+              <a
+                href="https://himadu.me/sinhala-music/contact"
+                className="white-text"
+              >
+                Contact Us
+              </a>
+            </p>
+            <p>
+              <a
+                href="https://himadu.me/sinhala-music/api"
+                className="white-text"
+              >
+                API
               </a>
             </p>
           </MDBCol>
@@ -99,7 +82,7 @@ const Footer = () => {
               Lanka
             </p>
             <p>
-              <i className="fa fa-envelope mr-3" /> notavialable@gmail.com
+              <i className="fa fa-envelope mr-3" /> notavailable@gmail.com
             </p>
             <p>
               <i className="fa fa-phone mr-3" /> + 94 11 1111 111

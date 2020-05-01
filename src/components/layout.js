@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
     <>
       <TAC />
       <main>{children}</main>
-      <Footer />
+      <Footer className="footer" />
     </>
   )
 }

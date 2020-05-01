@@ -7,9 +7,9 @@ import "./styles.css"
 const MusicList = data => {
   const Items = data.data
   return (
-    <div className="grid">
-      {" "}
-      <ul>
+    <div>
+      <p color="white">Amaradewa</p>
+      <ul className="grid">
         {Items.map(item => (
           <MusicCard data={item} />
         ))}
