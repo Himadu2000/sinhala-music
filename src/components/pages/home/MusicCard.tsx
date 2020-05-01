@@ -17,6 +17,12 @@ const Player = data => {
   const item = data.data
   const source = item.audioFile.map(itemMap => itemMap.url)
 
+  function PlayPause() {
+    play()
+    if (isPlaying) setIcon("stop")
+    else setIcon("play")
+  }
+
   function AddToPlayList() {
     console.log("Added")
   }
@@ -31,7 +37,7 @@ const Player = data => {
         <h2 className="h2-responsive">{item.title}</h2>
         <p>{item.singer}</p>
         <div className="text-center">
-          <MDBBtn color="purple" floating size="sm" onClick={() => play}>
+          <MDBBtn color="purple" floating size="sm" onClick={PlayPause}>
             <MDBIcon icon={icon} />
           </MDBBtn>
           <MDBBtn color="purple" floating size="sm" onClick={AddToPlayList}>
@@ -50,8 +56,6 @@ const Player = data => {
             playing={isPlaying}
             preload={isPlaying}
             loop={false}
-            onPlay={() => setIcon("stop")}
-            onStop={() => setIcon("play")}
             onLoadError={error => console.error(error)}
           />
         </MDBCardText>
