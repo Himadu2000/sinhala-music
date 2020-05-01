@@ -10,10 +10,10 @@ import "./styles.css"
 
 const MusicList = data => {
   const Items = data.data
-  const Amaradewa = {}
-  if (Items.map(unit => (unit.singer = "W D Amaradewa"))) {
-    //Amaradewa =
-  }
+  //const Amaradewa = {}
+  //if (Items.map(unit => (unit.singer = "W D Amaradewa"))) {
+  //Amaradewa =
+  //}
   const [isPlaying, setIsPlaying] = useState(false)
   const [icon, setIcon] = useState("play")
   function play() {
@@ -40,7 +40,7 @@ const MusicList = data => {
           </li>
         ))}
       </ul>
-      <ReactHowler
+      {/**    <ReactHowler
         src={Items.map(unit => unit.audioFile.map(itemMap => itemMap.url))}
         playing={isPlaying}
         preload={false}
@@ -49,7 +49,7 @@ const MusicList = data => {
         onPause={() => setIcon("play")}
         onStop={() => setIcon("play")}
         onLoadError={error => console.error(error)}
-      />
+      /> */}
     </>
   )
 }
