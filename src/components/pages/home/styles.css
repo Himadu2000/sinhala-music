@@ -15,6 +15,10 @@ ul {
   font-size: larger;
 }
 
+.flex {
+  display: flex;
+}
+
 @media (min-width: 300px) {
   .grid {
     grid-template-columns: auto auto;
