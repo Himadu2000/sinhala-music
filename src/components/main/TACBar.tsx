@@ -13,7 +13,9 @@ const AlertPage = () => {
         And if you don't agree with this or TOS please leave this site
         immediatly.
       </MDBAlert>{" "}
-      <MDBAlert color="info">You will need to double click to play.</MDBAlert>
+      <MDBAlert color="info">
+        You will need to triple click to play, Due to security issues.
+      </MDBAlert>
     </MDBContainer>
   )
 }
