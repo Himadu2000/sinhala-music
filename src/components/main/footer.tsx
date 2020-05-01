@@ -1,5 +1,6 @@
 import React from "react"
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact"
+import { Link } from "gatsby"
 
 const Footer = () => {
   return (
@@ -36,12 +37,10 @@ const Footer = () => {
               style={{ width: "60px" }}
             />
             <p>
-              Sinhala Music is here to promote Sinhala Classical music to future
-              as there's no good music for society. This site does not legally
-              oblige any owners of the music as many of them are dead! So if you
-              do not like to use Unlicense or legal problems please leave this
-              site. And let us preserve our culture and hope we get another good
-              musician to our generation.
+              Sinhala Music is here to promote Sinhala Classical music. This
+              site does not legally oblige any owners of the music as many of
+              them are dead! So if you do not like to use Unlicense or legal
+              problems please leave this site.
             </p>
           </MDBCol>
           <MDBCol md="3" lg="2" xl="2" className="mb-4 white-text">
@@ -52,22 +51,12 @@ const Footer = () => {
               className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"
               style={{ width: "60px" }}
             />
-            <p>
-              <a
-                href="https://himadu.me/sinhala-music/contact"
-                className="white-text"
-              >
-                Contact Us
-              </a>
-            </p>
-            <p>
-              <a
-                href="https://himadu.me/sinhala-music/api"
-                className="white-text"
-              >
-                API
-              </a>
-            </p>
+            <Link to="/contact" className="white-text">
+              Contact Us
+            </Link>
+            <Link to="/api" className="white-text">
+              API
+            </Link>
           </MDBCol>
           <MDBCol md="4" lg="3" xl="3" className="mb-4 white-text">
             <h6 className="text-uppercase font-weight-bold">
