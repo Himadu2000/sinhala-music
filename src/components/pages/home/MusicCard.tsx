@@ -45,7 +45,7 @@ const Player = data => {
       </MDBCardImage>
       <MDBCardBody cascade className="text-center">
         <MDBCardText>
-          {item.description}
+          {/*{item.description}*/}
           <ReactHowler
             src={source}
             playing={isPlaying}
@@ -53,6 +53,7 @@ const Player = data => {
             html5={true}
             onPlay={() => setIcon("stop")}
             onPause={() => setIcon("play")}
+            onStop={() => setIcon("play")}
             onLoadError={error => console.error(error)}
           />
         </MDBCardText>
