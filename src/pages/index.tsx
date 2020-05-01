@@ -14,7 +14,6 @@ const IndexPage = () => {
           audioFile {
             url
           }
-          flamelink_id
           date
           description
           singer
