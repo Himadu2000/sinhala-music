@@ -12,6 +12,7 @@ import {
 const ContactPage = () => {
   return (
     <section className="contact-section my-5">
+      <h3>Not Working</h3>
       <MDBCard>
         <MDBRow>
           <MDBCol lg="8">
