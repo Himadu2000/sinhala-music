@@ -1,6 +1,6 @@
-import React from "react"
-import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact"
 import { Link } from "gatsby"
+import { MDBCol, MDBContainer, MDBFooter, MDBRow } from "mdbreact"
+import React from "react"
 
 const Footer = () => {
   return (
@@ -71,16 +71,16 @@ const Footer = () => {
               className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"
               style={{ width: "60px" }}
             />
-            <p>
+            {/* <p>
               <i className="fa fa-home mr-3" /> Colombo, Example 01022, Sri
               Lanka
-            </p>
+           </p> */}
             <p>
-              <i className="fa fa-envelope mr-3" /> notavailable@gmail.com
+              <i className="fa fa-envelope mr-3" /> himadusirimanna.1@gmail.com
             </p>
-            <p>
+            {/* <p>
               <i className="fa fa-phone mr-3" /> + 94 11 1111 111
-            </p>
+           </p>*/}
           </MDBCol>
         </MDBRow>
       </MDBContainer>

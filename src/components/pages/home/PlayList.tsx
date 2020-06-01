@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import { MDBBtn, MDBIcon } from "mdbreact"
 import ReactHowler from "react-howler"
 import "./styles.css"
@@ -7,11 +7,14 @@ const PlayList = () => {
   const [isPlaying, setIsPlaying] = useState(false)
   const [PlayData, setPlayData] = useState("")
   function play() {
-    setIsPlaying(true)
+    if (localStorage.getItem("playList") != null) {
+      if (typeof window !== "undefined") {
+        setPlayData(localStorage.getItem("playList"))
+        setIsPlaying(true)
+      }
+    }
   }
-  if (typeof window !== "undefined") {
-    setPlayData(localStorage.getItem("playList"))
-  }
+
   return (
     <>
       <div className="flex">

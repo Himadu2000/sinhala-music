@@ -16,7 +16,7 @@ const Player = data => {
       let previousPlayList = localStorage.getItem("playList")
 
       if (previousPlayList != null) {
-        localStorage.setItem("playList", `"${source}","${previousPlayList}"`)
+        localStorage.setItem("playList", `"${source}",${previousPlayList}`)
       } else {
         localStorage.setItem("playList", `"${source}"`)
       }
