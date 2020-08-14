@@ -18,7 +18,7 @@
     "gatsby-plugin-sitemap": "^2.4.0",
     "gatsby-plugin-typescript": "^2.4.0",
     "gatsby-source-filesystem": "^2.3.0",
-    "gatsby-source-flamelink": "^3.0.0-alpha.3",
+    "gatsby-source-flamelink": "^3.0.2",
     "gatsby-theme-firebase": "^1.0.8",
     "gatsby-transformer-sharp": "^2.5.0",
     "howler": "^2.1.3",
