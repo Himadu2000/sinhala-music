@@ -12764,10 +12764,10 @@ react-hot-loader@^4.12.20:
     shallowequal "^1.1.0"
     source-map "^0.7.3"
 
-react-howler@^3.7.4:
-  version "3.7.4"
-  resolved "https://registry.yarnpkg.com/react-howler/-/react-howler-3.7.4.tgz#66b4e1eb9f94cb86aa8def9d0b8afaac0ebffffc"
-  integrity sha512-cQhzgIZd8wf6drtyjGJtT/9ShfN20jSyse+dGCPL9v5erz0pdusTQqGhuqFdVkNmYWfk2TQVck5w4nHqaCCyyg==
+react-howler@^3.7.5:
+  version "3.7.5"
+  resolved "https://registry.yarnpkg.com/react-howler/-/react-howler-3.7.5.tgz#352d9ad32db47ffd8c222bedeb932993a9aeece2"
+  integrity sha512-VpEUj3pDtlmwz4Hix9mzoKQjy3QUQ4FCM1yyhS7aLR9ndkB1x0MS8ugOHkgjtV0BZ05cNfSU9K0ink9Wg7TDZQ==
   dependencies:
     howler "^2.1.1"
     prop-types "^15.5.6"
