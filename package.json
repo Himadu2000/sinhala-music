@@ -33,7 +33,7 @@
   "devDependencies": {
     "cross-env": "^7.0.2",
     "dotenv": "^8.2.0",
-    "prettier": "2.0.5"
+    "prettier": "2.1.0"
   },
   "keywords": [
     "sinhala",
