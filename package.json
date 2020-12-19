@@ -28,7 +28,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
-    "react-howler": "^3.7.4"
+    "react-howler": "^5.0.0"
   },
   "devDependencies": {
     "@types/jest": "^26.0.19",
