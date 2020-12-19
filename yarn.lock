@@ -3650,10 +3650,10 @@
     "@types/history" "*"
     "@types/react" "*"
 
-"@types/react-howler@^3.7.1":
-  version "3.7.1"
-  resolved "https://registry.yarnpkg.com/@types/react-howler/-/react-howler-3.7.1.tgz#6c32dfc8555174ef832eb0579eeb90934f6da92b"
-  integrity sha512-qqPmkVm0iUWzEcQ20csCTs1rrhCZkiMtPjmeRogQrd8Q2nVALb7Bs7nazlNePmd+9I8kKlsOK5EEV2BZKCXN/Q==
+"@types/react-howler@^3.7.2":
+  version "3.7.2"
+  resolved "https://registry.yarnpkg.com/@types/react-howler/-/react-howler-3.7.2.tgz#2ff8bbca5b9074a2e79d9f126d848ecd5064ca0e"
+  integrity sha512-2R2nypBTD8L1vHL7Sz5Pn7L5I0v5+UIp5y4ZnZ3r7uggqghVf1DLo/pJ9e7g2A+PWq/xZJXvzrF9ZQSdwrQyEQ==
   dependencies:
     "@types/howler" "*"
     "@types/react" "*"
