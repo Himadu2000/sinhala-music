@@ -17,6 +17,9 @@ jobs:
     strategy:
       matrix:
         node-version: [10.x, 12.x, 14.x]
+        
+    env:
+      FIREBASE_CONFIG_PRIVATE_KEY: ${{ secrets.FIREBASE_CONFIG_PRIVATE_KEY }}
 
     steps:
     - uses: actions/checkout@v2
