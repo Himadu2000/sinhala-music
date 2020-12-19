@@ -22,7 +22,7 @@
     "gatsby-theme-firebase": "^1.0.10",
     "gatsby-transformer-sharp": "^2.5.0",
     "howler": "^2.2.1",
-    "mdbreact": "^4.26.0",
+    "mdbreact": "^5.0.1",
     "node-sass": "^4.14.1",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
