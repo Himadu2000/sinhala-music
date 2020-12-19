@@ -35,7 +35,7 @@
     "@types/react-test-renderer": "^16.9.2",
     "babel-jest": "^26.1.0",
     "babel-preset-gatsby": "^0.5.2",
-    "cross-env": "^7.0.2",
+    "cross-env": "^7.0.3",
     "dotenv": "^8.2.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.1.0",
