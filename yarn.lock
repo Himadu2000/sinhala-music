@@ -8814,7 +8814,7 @@ gatsby-plugin-theme-ui@^0.2.43:
   resolved "https://registry.yarnpkg.com/gatsby-plugin-theme-ui/-/gatsby-plugin-theme-ui-0.2.53.tgz#57a52339e50ede7ef4df0b1b5593d360b56b597d"
   integrity sha512-AlQC+uC9lvrP3LlGsLe0f0azp7B5c49qWl4b3FDj8xbravBoqFmJT7XrNTpYYbxnCnx/K1v0QtwP8qindw0S2g==
 
-gatsby-plugin-typescript@^2.1.19, gatsby-plugin-typescript@^2.4.0, gatsby-plugin-typescript@^2.9.0:
+gatsby-plugin-typescript@^2.1.23, gatsby-plugin-typescript@^2.4.0, gatsby-plugin-typescript@^2.9.0:
   version "2.9.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-typescript/-/gatsby-plugin-typescript-2.9.0.tgz#6ad24dfdd1bc28e507a7762aba4ec6da36da6cd4"
   integrity sha512-PoyvCt1E2y0TnGH3KIadPeiPB3691iXPYW5S8o0nKam3PcVo1UXcyTK5CRFUgVpsLsfzFcI+2HJ+TDrANDTWNw==
@@ -8960,17 +8960,17 @@ gatsby-telemetry@^1.7.0:
     node-fetch "^2.6.1"
     uuid "3.4.0"
 
-gatsby-theme-firebase@^1.0.8:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/gatsby-theme-firebase/-/gatsby-theme-firebase-1.0.8.tgz#49be267456d9c071884fc0804bc36ecb03eabb90"
-  integrity sha512-8LCvP5uXYjN2hqH5xbAL2Qt25Hy58ZRmmSGjnLOC48lpZo/T3uxVRViBE6Eh9T7tNgestkp4EtPzez4J8UxoxA==
+gatsby-theme-firebase@^1.0.10:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/gatsby-theme-firebase/-/gatsby-theme-firebase-1.0.10.tgz#5b3c675a6f899dfce2677da574a96223d2f63281"
+  integrity sha512-+UOQIxUS8ewttLK7NqAs/dEaoKFeejIByjSYlIN+b9VUyyALDsI2o//1TABRsi1OhXJY36iH/ew46Npri5W1YA==
   dependencies:
     "@emotion/core" "^10.0.17"
     "@mdx-js/react" "^1.4.0"
     firebase "^7.5.0"
     gatsby-plugin-emotion "^4.1.16"
     gatsby-plugin-theme-ui "^0.2.43"
-    gatsby-plugin-typescript "^2.1.19"
+    gatsby-plugin-typescript "^2.1.23"
     theme-ui "^0.2.49"
     unstated-next "^1.1.0"
 
