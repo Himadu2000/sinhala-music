@@ -21,7 +21,7 @@
     "gatsby-source-flamelink": "^3.0.4",
     "gatsby-theme-firebase": "^1.0.10",
     "gatsby-transformer-sharp": "^2.12.1",
-    "howler": "^2.2.1",
+    "howler": "^2.2.2",
     "mdbreact": "^5.0.2",
     "node-sass": "^5.0.0",
     "prop-types": "^15.7.2",
