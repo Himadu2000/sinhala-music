@@ -33,7 +33,7 @@
   "devDependencies": {
     "@types/jest": "^26.0.23",
     "@types/react-test-renderer": "^17.0.1",
-    "babel-jest": "^27.0.5",
+    "babel-jest": "^27.0.6",
     "babel-preset-gatsby": "^0.12.2",
     "cross-env": "^7.0.3",
     "dotenv": "^10.0.0",
