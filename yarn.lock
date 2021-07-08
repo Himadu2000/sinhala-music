@@ -3331,10 +3331,10 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-howler@^3.7.2":
-  version "3.7.2"
-  resolved "https://registry.yarnpkg.com/@types/react-howler/-/react-howler-3.7.2.tgz#2ff8bbca5b9074a2e79d9f126d848ecd5064ca0e"
-  integrity sha512-2R2nypBTD8L1vHL7Sz5Pn7L5I0v5+UIp5y4ZnZ3r7uggqghVf1DLo/pJ9e7g2A+PWq/xZJXvzrF9ZQSdwrQyEQ==
+"@types/react-howler@^3.7.3":
+  version "3.7.3"
+  resolved "https://registry.yarnpkg.com/@types/react-howler/-/react-howler-3.7.3.tgz#d0b97ca48e13c6e425bd5c266b8df26a01352c5e"
+  integrity sha512-M6QwQpa8YIPskOME8c+HL3mde6qTAW5vI5oK0K4RcxIE0H5ZkPqc0ZNyKAoaaEINXMJLKCwGaLO5DUQ19iPzRw==
   dependencies:
     "@types/howler" "*"
     "@types/react" "*"

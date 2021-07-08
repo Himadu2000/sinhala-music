@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "Himadu Sirimanna <himadusirimanna.1@gmail.com>",
   "dependencies": {
-    "@types/react-howler": "^3.7.2",
+    "@types/react-howler": "^3.7.3",
     "gatsby": "^2.32.13",
     "gatsby-image": "^2.11.0",
     "gatsby-plugin-manifest": "^2.12.1",
